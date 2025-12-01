@@ -7,20 +7,19 @@ import Navbar from './assets/components/Navbar'
 import DashboardPage from './assets/components/DashboardPage'
 import RealtimeMonitoring from './assets/components/RealtimeMonitoring'
 import WeatherSafety from './assets/components/WeatherSafety'
+import AppRouter from './router/AppRouter'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar/>
-      {/* <DashboardPage/> */}
-      <Manager/>
+    
+      <AppRouter/>
       
       
       
 
-    </>
+   
   )
 }
 
