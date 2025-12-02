@@ -5,6 +5,7 @@ import Register from "../assets/pages/Register";
 import Maps from "../assets/pages/Maps";
 import Manager from "../assets/components/Manager";
 import AuthPage from "@/assets/pages/AuthPage";
+import Layout from "@/assets/components/Layout";
 
 // Simple protected route using localStorage "token"
 function PrivateRoute({ children }) {
@@ -15,6 +16,7 @@ function PrivateRoute({ children }) {
 export default function AppRouter() {
   return (
     <BrowserRouter>
+    <Layout>
       <Routes>
         {/* Public pages */}
         <Route path="/login" element={<Login/>} />
@@ -41,6 +43,7 @@ export default function AppRouter() {
         {/* Default route */}
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

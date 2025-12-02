@@ -8,6 +8,7 @@ import DashboardPage from './assets/components/DashboardPage'
 import RealtimeMonitoring from './assets/components/RealtimeMonitoring'
 import WeatherSafety from './assets/components/WeatherSafety'
 import AppRouter from './router/AppRouter'
+import Layout from './assets/components/Layout'
 
 function App() {
   const [count, setCount] = useState(0)

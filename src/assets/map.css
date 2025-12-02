@@ -1,0 +1,49 @@
+/* Makes only the maps page fullscreen */
+.map-fullscreen-container {
+  width: 100vw;
+  height: calc(100vh - 70px); /* If navbar exists; adjust if needed */
+  display: flex;
+  background: #020617;
+  overflow: hidden;
+}
+
+.map-area {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.leaflet-map {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Loading Screen */
+.loading-text {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Marker styling */
+.substation-icon__box {
+  background: #0ea5e9;
+  padding: 6px 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.lt-icon__box {
+  background: #facc15;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
