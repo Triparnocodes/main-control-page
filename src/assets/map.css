@@ -30,15 +30,27 @@
 }
 
 /* Marker styling */
-.substation-icon__box {
+/* .substation-icon__box {
   background: #0ea5e9;
   padding: 6px 8px;
   border-radius: 8px;
   color: white;
   font-weight: bold;
   font-size: 14px;
+} */
+ 
+.substation-icon__box {
+  padding: 4px 6px;
+  background: linear-gradient(130deg, var(--substation-color), #3b82f6);
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.45);
+  text-transform: uppercase;
+  line-height: 1;
 }
-
 .lt-icon__box {
   background: #facc15;
   padding: 6px 8px;
@@ -46,4 +58,17 @@
   font-size: 12px;
   font-weight: bold;
   text-align: center;
+}
+
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  background: #1a2332;
+  z-index: 1;
+}
+
+.substation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
